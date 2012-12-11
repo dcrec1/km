@@ -55,6 +55,7 @@ class KM
 
     def identify(id)
       @id = id
+      self
     end
 
     def record(action,props={})

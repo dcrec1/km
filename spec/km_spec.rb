@@ -190,4 +190,11 @@ describe KM do
       KM::key.should == key
     end
   end
+
+  describe ".identify" do
+    it "should return the KM module" do
+      KM::init "KEY"
+      KM::identify('charles').should == KM
+    end
+  end
 end
